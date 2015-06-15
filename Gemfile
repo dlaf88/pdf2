@@ -13,6 +13,7 @@ group :production do
    gem 'sqlite3'
  end
 gem 'pdf-forms', '~> 0.6.0'
+gem 'bootstrap-sass'
 
 gem 'sass-rails', '~> 4.0.3'
 
