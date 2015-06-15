@@ -1,29 +1,38 @@
-<p id="notice"><%= notice %></p>
+<div class='row' align='center'>
+  <p id="notice"><%= notice %></p>
+  <h3>Review Your Information</h3>
+  <br>
+  <p>
+    <strong>Last name:</strong>
+    <%= @profile.last_name %>
+  </p>
 
-<p>
-  <strong>Last name:</strong>
-  <%= @profile.last_name %>
-</p>
+  <p>
+    <strong>First name:</strong>
+    <%= @profile.first_name %>
+  </p>
 
-<p>
-  <strong>First name:</strong>
-  <%= @profile.first_name %>
-</p>
+  <p>
+    <strong>Middle name:</strong>
+    <%= @profile.middle_name %>
+  </p>
 
-<p>
-  <strong>Middle name:</strong>
-  <%= @profile.middle_name %>
-</p>
+  <p>
+    <strong>Email address:</strong>
+    <%= @profile.email_address %>
+  </p>
 
-<p>
-  <strong>Email address:</strong>
-  <%= @profile.email_address %>
-</p>
+  <p>
+    <strong>Telephone:</strong>
+    <%= @profile.telephone %>
+  </p>
 
-<p>
-  <strong>Telephone:</strong>
-  <%= @profile.telephone %>
-</p>
+  <%= link_to 'Edit', edit_profile_path(@profile) %> |
+  <%= link_to 'Back', profiles_path %>
+  <br>
+  <br>
 
-<%= link_to 'Edit', edit_profile_path(@profile) %> |
-<%= link_to 'Back', profiles_path %>
+  <%= link_to "Download PDF", profile_path(@profile, :format => 'pdf'), class: 'btn-danger btn',id: 'pdf-button'%>
+  
+
+</div>

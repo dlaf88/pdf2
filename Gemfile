@@ -14,6 +14,7 @@ group :production do
  end
 gem 'pdf-forms', '~> 0.6.0'
 gem 'bootstrap-sass'
+gem "flat-ui-rails"
 
 gem 'sass-rails', '~> 4.0.3'
 
