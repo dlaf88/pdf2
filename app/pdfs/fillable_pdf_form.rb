@@ -32,7 +32,7 @@ class FillablePdfForm
   end
 
   def pdftk
-    @pdftk ||= PdfForms.new('pdftk') # On my Mac, the location of pdftk was different than on my linux server.
+    @pdftk ||= PdfForms.new("/app/vendor/pdftk/bin/pdftk") 
   end
 
   def fill_out
