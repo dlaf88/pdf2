@@ -32,7 +32,7 @@ class FillablePdfForm
   end
 
   def pdftk
-    @pdftk ||= PdfForms.new("/app/vendor/pdftk/bin/pdftk") 
+    @pdftk ||= PdfForms.new("#{Rails.root}/vendor/pdftk/bin/pdftk") 
   end
 
   def fill_out
